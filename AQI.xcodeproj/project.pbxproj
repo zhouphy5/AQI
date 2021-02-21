@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A61C90C2587663500938FFD /* AQIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A61C90B2587663500938FFD /* AQIApp.swift */; };
+		8A61C90E2587663500938FFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A61C90D2587663500938FFD /* ContentView.swift */; };
+		8A61C9102587663800938FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A61C90F2587663800938FFD /* Assets.xcassets */; };
+		8A61C9132587663800938FFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A61C9122587663800938FFD /* Preview Assets.xcassets */; };
+		8A61C9222587665100938FFD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A61C9212587665100938FFD /* WidgetKit.framework */; };
+		8A61C9242587665100938FFD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A61C9232587665100938FFD /* SwiftUI.framework */; };
+		8A61C9272587665100938FFD /* AQIWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A61C9262587665100938FFD /* AQIWidget.swift */; };
+		8A61C9292587665200938FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A61C9282587665200938FFD /* Assets.xcassets */; };
+		8A61C92D2587665200938FFD /* AQIWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A61C91F2587665100938FFD /* AQIWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A61C92B2587665200938FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A61C9002587663500938FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A61C91E2587665100938FFD;
+			remoteInfo = AQIWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A61C9312587665200938FFD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A61C92D2587665200938FFD /* AQIWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A61C9082587663500938FFD /* AQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A61C90B2587663500938FFD /* AQIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIApp.swift; sourceTree = "<group>"; };
+		8A61C90D2587663500938FFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A61C90F2587663800938FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A61C9122587663800938FFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A61C9142587663800938FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A61C91F2587665100938FFD /* AQIWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AQIWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A61C9212587665100938FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8A61C9232587665100938FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8A61C9262587665100938FFD /* AQIWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIWidget.swift; sourceTree = "<group>"; };
+		8A61C9282587665200938FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A61C92A2587665200938FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A61C9052587663500938FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A61C91C2587665100938FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61C9242587665100938FFD /* SwiftUI.framework in Frameworks */,
+				8A61C9222587665100938FFD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A61C8FF2587663500938FFD = {
+			isa = PBXGroup;
+			children = (
+				8A61C90A2587663500938FFD /* AQI */,
+				8A61C9252587665100938FFD /* AQIWidget */,
+				8A61C9202587665100938FFD /* Frameworks */,
+				8A61C9092587663500938FFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A61C9092587663500938FFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A61C9082587663500938FFD /* AQI.app */,
+				8A61C91F2587665100938FFD /* AQIWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A61C90A2587663500938FFD /* AQI */ = {
+			isa = PBXGroup;
+			children = (
+				8A61C90B2587663500938FFD /* AQIApp.swift */,
+				8A61C90D2587663500938FFD /* ContentView.swift */,
+				8A61C90F2587663800938FFD /* Assets.xcassets */,
+				8A61C9142587663800938FFD /* Info.plist */,
+				8A61C9112587663800938FFD /* Preview Content */,
+			);
+			path = AQI;
+			sourceTree = "<group>";
+		};
+		8A61C9112587663800938FFD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A61C9122587663800938FFD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A61C9202587665100938FFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A61C9212587665100938FFD /* WidgetKit.framework */,
+				8A61C9232587665100938FFD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A61C9252587665100938FFD /* AQIWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8A61C9262587665100938FFD /* AQIWidget.swift */,
+				8A61C9282587665200938FFD /* Assets.xcassets */,
+				8A61C92A2587665200938FFD /* Info.plist */,
+			);
+			path = AQIWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A61C9072587663500938FFD /* AQI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A61C9172587663800938FFD /* Build configuration list for PBXNativeTarget "AQI" */;
+			buildPhases = (
+				8A61C9042587663500938FFD /* Sources */,
+				8A61C9052587663500938FFD /* Frameworks */,
+				8A61C9062587663500938FFD /* Resources */,
+				8A61C9312587665200938FFD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A61C92C2587665200938FFD /* PBXTargetDependency */,
+			);
+			name = AQI;
+			productName = AQI;
+			productReference = 8A61C9082587663500938FFD /* AQI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A61C91E2587665100938FFD /* AQIWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A61C92E2587665200938FFD /* Build configuration list for PBXNativeTarget "AQIWidgetExtension" */;
+			buildPhases = (
+				8A61C91B2587665100938FFD /* Sources */,
+				8A61C91C2587665100938FFD /* Frameworks */,
+				8A61C91D2587665100938FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AQIWidgetExtension;
+			productName = AQIWidgetExtension;
+			productReference = 8A61C91F2587665100938FFD /* AQIWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A61C9002587663500938FFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8A61C9072587663500938FFD = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					8A61C91E2587665100938FFD = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8A61C9032587663500938FFD /* Build configuration list for PBXProject "AQI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A61C8FF2587663500938FFD;
+			productRefGroup = 8A61C9092587663500938FFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A61C9072587663500938FFD /* AQI */,
+				8A61C91E2587665100938FFD /* AQIWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A61C9062587663500938FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61C9132587663800938FFD /* Preview Assets.xcassets in Resources */,
+				8A61C9102587663800938FFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A61C91D2587665100938FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61C9292587665200938FFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A61C9042587663500938FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61C90E2587663500938FFD /* ContentView.swift in Sources */,
+				8A61C90C2587663500938FFD /* AQIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A61C91B2587665100938FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61C9272587665100938FFD /* AQIWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A61C92C2587665200938FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A61C91E2587665100938FFD /* AQIWidgetExtension */;
+			targetProxy = 8A61C92B2587665200938FFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A61C9152587663800938FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A61C9162587663800938FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A61C9182587663800938FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AQI/Preview Content\"";
+				DEVELOPMENT_TEAM = 69J432AVMN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AQI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhouphy5.AQI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A61C9192587663800938FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AQI/Preview Content\"";
+				DEVELOPMENT_TEAM = 69J432AVMN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AQI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhouphy5.AQI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A61C92F2587665200938FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69J432AVMN;
+				INFOPLIST_FILE = AQIWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhouphy5.AQI.AQIWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A61C9302587665200938FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69J432AVMN;
+				INFOPLIST_FILE = AQIWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhouphy5.AQI.AQIWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A61C9032587663500938FFD /* Build configuration list for PBXProject "AQI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A61C9152587663800938FFD /* Debug */,
+				8A61C9162587663800938FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A61C9172587663800938FFD /* Build configuration list for PBXNativeTarget "AQI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A61C9182587663800938FFD /* Debug */,
+				8A61C9192587663800938FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A61C92E2587665200938FFD /* Build configuration list for PBXNativeTarget "AQIWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A61C92F2587665200938FFD /* Debug */,
+				8A61C9302587665200938FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A61C9002587663500938FFD /* Project object */;
+}
