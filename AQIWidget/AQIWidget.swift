@@ -12,12 +12,12 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> AQIEntry {
         AQIEntry()
     }
-
+    
     func getSnapshot(in context: Context, completion: @escaping (AQIEntry) -> ()) {
         let entry = AQIEntry()
         completion(entry)
     }
-
+    
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         // Create a timeline entry for "now."
         let date = Date()
@@ -57,6 +57,18 @@ extension View {
     }
 }
 
+extension View {
+    func widgetBackground(_ backgroundView: some View) -> some View {
+        if #available(iOSApplicationExtension 17.0, *) {
+            return containerBackground(for: .widget) {
+                backgroundView
+            }
+        } else {
+            return background(backgroundView)
+        }
+    }
+}
+
 struct AQIWidgetView : View {
     var entry: Provider.Entry
     var body: some View {
@@ -65,6 +77,11 @@ struct AQIWidgetView : View {
             .font(.system(size: 65))
             .foregroundColor(entry.textColor)
             .expandable()
+            .widgetBackground(Color(Color.RGBColorSpace.sRGB,
+                                    red: entry.red,
+                                    green: entry.green,
+                                    blue: entry.blue,
+                                    opacity: 1))
             .background(Color(Color.RGBColorSpace.sRGB,
                               red: entry.red,
                               green: entry.green,
